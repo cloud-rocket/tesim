@@ -401,13 +401,20 @@ int main(int argc, char* argv[])
 	TEADSInterface ads_idv, ads_sd_flag;
 	if (use_ads_any)
 	{
+		long nPort = AdsPortOpen();
+		std::cout << "Ads Port: " << nPort << '\n';
+
+
 		AmsAddr plc_addr;
-		plc_addr.netId.b[0] = 5;
-		plc_addr.netId.b[1] = 20;
-		plc_addr.netId.b[2] = 215;
-		plc_addr.netId.b[3] = 224;
-		plc_addr.netId.b[4] = 1;
-		plc_addr.netId.b[5] = 1;
+
+		long nErr = AdsGetLocalAddress(&plc_addr);
+		if (nErr) {
+			std::cout << "Error: AdsGetLocalAddress: " << nErr << '\n';
+			return -1;
+		}
+
+		std::cout << "Local Ads Addr " << int(plc_addr.netId.b[0]) << " " << int(plc_addr.netId.b[1]) << " " << int(plc_addr.netId.b[2]) << " " << int(plc_addr.netId.b[3]) << " " << int(plc_addr.netId.b[4]) << " " << int(plc_addr.netId.b[5]) << "  Port=" << plc_addr.port << std::endl;
+
 		plc_addr.port = 851;
 
 		// network type
@@ -454,7 +461,7 @@ int main(int argc, char* argv[])
 		ads_idv.connect("G_IO.IDV", &plc_addr);
 
 		// shutdown flag
-		ads_sd_flag.connect("G_IO.SD_FLAG", &plc_addr);
+		//ads_sd_flag.connect("G_IO.SD_FLAG", &plc_addr);
 	}
 #endif 
 

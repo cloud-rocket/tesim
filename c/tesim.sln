@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio Express 2013 for Windows Desktop
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tesim", "tesimcpp.vcxproj", "{8E5921D3-ED40-4E39-B5BA-E3EC2020BD82}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -17,6 +17,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testsignals", "testsignals\testsignals.vcxproj", "{4762F7E2-F2EF-4FB9-B725-234591AC86D3}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testsignals2plc", "testsignals2plc\testsignals2plc.vcxproj", "{DD1879BC-E4E6-4953-8B89-3F72FE51B043}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ads_test", "..\ads_test\ads_test.vcxproj", "{8D38FB83-AE91-465B-AE50-2704165F4456}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -114,6 +116,20 @@ Global
 		{DD1879BC-E4E6-4953-8B89-3F72FE51B043}.Release|TwinCAT RT (x86).ActiveCfg = Release|Win32
 		{DD1879BC-E4E6-4953-8B89-3F72FE51B043}.Release|Win32.ActiveCfg = Release|Win32
 		{DD1879BC-E4E6-4953-8B89-3F72FE51B043}.Release|Win32.Build.0 = Release|Win32
+		{8D38FB83-AE91-465B-AE50-2704165F4456}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{8D38FB83-AE91-465B-AE50-2704165F4456}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{8D38FB83-AE91-465B-AE50-2704165F4456}.Debug|TwinCAT CE7 (ARMV7).ActiveCfg = Debug|Win32
+		{8D38FB83-AE91-465B-AE50-2704165F4456}.Debug|TwinCAT RT (x64).ActiveCfg = Debug|Win32
+		{8D38FB83-AE91-465B-AE50-2704165F4456}.Debug|TwinCAT RT (x86).ActiveCfg = Debug|Win32
+		{8D38FB83-AE91-465B-AE50-2704165F4456}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8D38FB83-AE91-465B-AE50-2704165F4456}.Debug|Win32.Build.0 = Debug|Win32
+		{8D38FB83-AE91-465B-AE50-2704165F4456}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{8D38FB83-AE91-465B-AE50-2704165F4456}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{8D38FB83-AE91-465B-AE50-2704165F4456}.Release|TwinCAT CE7 (ARMV7).ActiveCfg = Release|Win32
+		{8D38FB83-AE91-465B-AE50-2704165F4456}.Release|TwinCAT RT (x64).ActiveCfg = Release|Win32
+		{8D38FB83-AE91-465B-AE50-2704165F4456}.Release|TwinCAT RT (x86).ActiveCfg = Release|Win32
+		{8D38FB83-AE91-465B-AE50-2704165F4456}.Release|Win32.ActiveCfg = Release|Win32
+		{8D38FB83-AE91-465B-AE50-2704165F4456}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
